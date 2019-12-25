@@ -1,0 +1,19 @@
+{% extends 'layouts/base.html.twig' %}
+
+{% block body %}
+
+    <!-- start Body Inner -->
+    <div class="body-inner">
+        {% include('includes/header/index.html.twig') %}
+
+        <!-- start Main Wrapper -->
+        <div class="main-wrapper scrollspy-action">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <!-- end Main Wrapper -->
+
+        {% include('includes/footer/index.html.twig') %}
+    </div>
+    <!-- start Body Inner -->
+{% endblock %}
