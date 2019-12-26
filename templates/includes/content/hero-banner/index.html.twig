@@ -1,0 +1,712 @@
+<!-- start Hero Banner -->
+<div class="hero-banner hero-flex" data-dark-overlay="4"
+     style="background-image:url({{ asset('images/image-bg/02.jpg') }});">
+
+    <div class="hero-inner hero-flex set-height-01">
+
+        <div class="container hero-middle">
+
+            <div class="row gap-40 gap-lg-60 align-items-center">
+
+                <div class="col-12 col-lg-6 col-xl-7">
+
+                    <div class="hero-text">
+
+                        <h2>Book flight, get free sleep</h2>
+                        <p class="lead">Three nights two days hotel + flight + taxes</p>
+                        <p class="hero-price">
+                            all starting from
+                            <span>USD $986</span>
+                        </p>
+                        <a href="#" class="btn btn-secondary btn-wide">Book now</a>
+                        <p class="font-sm mt-25 line-125 spacing-1">* Booking period June 15 to June, 23 2019<br/>*
+                            Traveling period Nov 15 to Nov 23, 2019</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-9 col-lg-6 col-xl-5">
+
+                    <div class="menu-horizontal-wrapper-02">
+
+                        <nav class="menu-horizontal-02">
+                            <ul class="nav">
+                                <li>
+                                    <a class="active" data-toggle="tab" href="#formSearchMain-01">Hotel</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#formSearchMain-02">Flight</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#formSearchMain-03">Car</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#formSearchMain-04">Tour</a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tab" href="#formSearchMain-05">Guide</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="tab-content">
+
+                            <div role="tabpanel" class="tab-pane active" id="formSearchMain-01">
+
+                                <div class="tab-inner menu-horizontal-content">
+
+                                    <div class="form-search-main-01">
+
+                                        <form>
+
+                                            <div class="form-inner">
+
+                                                <div class="row gap-10 mb-15 align-items-end">
+
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label>Destination</label>
+                                                            <div class="form-icon-left typeahead__container">
+                                                                    <span class="icon-font text-muted"><i
+                                                                                class="bx bx-map"></i></span>
+                                                                <input class="js-typeahead-country_v1 form-control"
+                                                                       name="country_v1[query]" type="search"
+                                                                       placeholder="Country or city"
+                                                                       autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="col-inner">
+                                                            <div id="airDatepickerRange-hotel"
+                                                                 class="row gap-10 mb-15">
+
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label>Check-in</label>
+                                                                        <div class="form-icon-left">
+                                                                                <span class="icon-font text-muted"><i
+                                                                                            class="bx bx-calendar"></i></span>
+                                                                            <input type="text" id="dateStart-hotel"
+                                                                                   class="form-control form-readonly-control"
+                                                                                   placeholder="dd/mm/yyyy">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label>Check-out</label>
+                                                                        <div class="form-icon-left">
+                                                                                <span class="icon-font text-muted"><i
+                                                                                            class="bx bx-calendar"></i></span>
+                                                                            <input type="text" id="dateEnd-hotel"
+                                                                                   class="form-control form-readonly-control"
+                                                                                   placeholder="dd/mm/yyyy">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 ">
+
+                                                        <div class="col-inner">
+
+                                                            <div class="row gap-10 mb-15">
+
+                                                                <div class="col-4 col-sm-6 col-md-4">
+                                                                    <div class="form-group form-spin-group">
+                                                                        <label for="room-amount">Rooms</label>
+                                                                        <div class="form-icon-left">
+                                                                                <span class="icon-font text-muted"><i
+                                                                                            class="bx bx-home-alt"></i></span>
+                                                                            <input type="text"
+                                                                                   class="form-control touch-spin-03 form-readonly-control"
+                                                                                   placeholder="0" readonly/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-8 col-sm-6 col-md-8">
+                                                                    <div class="col-inner">
+                                                                        <div class="form-people-thread">
+                                                                            <div class="row gap-5 align-items-center">
+                                                                                <div class="col">
+                                                                                    <div class="form-group form-spin-group">
+                                                                                        <label for="room-amount">Adults
+                                                                                            <small class=" text-muted font10 line-1">(12-75)</small></label>
+                                                                                        <div class="form-icon-left">
+                                                                                                <span class="icon-font text-muted"><i
+                                                                                                            class="bx bx-user"></i></span>
+                                                                                            <input type="text"
+                                                                                                   class="form-control touch-spin-03 form-readonly-control"
+                                                                                                   placeholder="0"
+                                                                                                   readonly/>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="form-group form-spin-group">
+                                                                                        <label for="room-amount">Children
+                                                                                            <small class="text-muted font10 line-1">(2-12)</small></label>
+                                                                                        <div class="form-icon-left">
+                                                                                                <span class="icon-font text-muted"><i
+                                                                                                            class="bx bx-user"></i></span>
+                                                                                            <input type="text"
+                                                                                                   class="form-control touch-spin-03 form-readonly-control"
+                                                                                                   placeholder="0"
+                                                                                                   readonly/>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <a href="#" class="btn btn-primary btn-block">Search now</a>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade in" id="formSearchMain-02">
+
+                                <div class="tab-inner menu-horizontal-content">
+
+                                    <div class="form-search-main-01">
+
+                                        <form>
+
+                                            <div class="form-inner">
+
+                                                <div class="mb-10">
+
+                                                    <div class="custom-control custom-radio  custom-control-inline">
+                                                        <input type="radio" id="flightSearchRadio-1"
+                                                               name="flightSearchRadio" class="custom-control-input"
+                                                               checked>
+                                                        <label class="custom-control-label"
+                                                               for="flightSearchRadio-1">Return</label>
+                                                    </div>
+
+                                                    <div class="custom-control custom-radio  custom-control-inline">
+                                                        <input type="radio" id="flightSearchRadio-2"
+                                                               name="flightSearchRadio"
+                                                               class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                               for="flightSearchRadio-2">One-way</label>
+                                                    </div>
+
+                                                    <div class="custom-control custom-radio  custom-control-inline">
+                                                        <input type="radio" id="flightSearchRadio-3"
+                                                               name="flightSearchRadio"
+                                                               class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                               for="flightSearchRadio-3">Multicities</label>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row gap-10 mb-15">
+
+                                                    <div class="col-6">
+                                                        <div class="form-group">
+                                                            <label>From</label>
+                                                            <div class="form-icon-left typeahead__container">
+                                                                    <span class="icon-font text-muted"><i
+                                                                                class="bx bx-map"></i></span>
+                                                                <input class="js-typeahead-country_v1 form-control"
+                                                                       name="country_v1[query]" type="search"
+                                                                       placeholder="Country or city"
+                                                                       autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-6">
+                                                        <div class="form-group">
+                                                            <label>To</label>
+                                                            <div class="form-icon-left typeahead__container">
+                                                                    <span class="icon-font text-muted"><i
+                                                                                class="bx bx-map"></i></span>
+                                                                <input class="js-typeahead-country_v1 form-control"
+                                                                       name="country_v1[query]" type="search"
+                                                                       placeholder="Country or city"
+                                                                       autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <div class="col-inner">
+                                                            <div id="airDatepickerRange-flight"
+                                                                 class="row gap-10 mb-15">
+
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label>Check-in</label>
+                                                                        <div class="form-icon-left">
+                                                                                <span class="icon-font text-muted"><i
+                                                                                            class="bx bx-calendar"></i></span>
+                                                                            <input type="text" id="dateStart-flight"
+                                                                                   class="form-control form-readonly-control"
+                                                                                   placeholder="dd/mm/yyyy">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label>Check-out</label>
+                                                                        <div class="form-icon-left">
+                                                                                <span class="icon-font text-muted"><i
+                                                                                            class="bx bx-calendar"></i></span>
+                                                                            <input type="text" id="dateEnd-flight"
+                                                                                   class="form-control form-readonly-control"
+                                                                                   placeholder="dd/mm/yyyy">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <div class="col-inner">
+                                                            <div class="row gap-5">
+                                                                <div class="col-4">
+                                                                    <div class="form-group form-spin-group">
+                                                                        <label for="room-amount">Adult <small
+                                                                                    class="text-muted font10 line-1">(12-75)</small></label>
+                                                                        <div class="form-icon-left">
+                                                                                <span class="icon-font text-muted"><i
+                                                                                            class="bx bx-user"></i></span>
+                                                                            <input type="text"
+                                                                                   class="form-control touch-spin-03 form-readonly-control"
+                                                                                   placeholder="0" readonly/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <div class="form-group form-spin-group">
+                                                                        <label for="room-amount">Child <small
+                                                                                    class="text-muted font10 line-1">(2-12)</small></label>
+                                                                        <div class="form-icon-left">
+                                                                                <span class="icon-font text-muted"><i
+                                                                                            class="bx bx-user"></i></span>
+                                                                            <input type="text"
+                                                                                   class="form-control touch-spin-03 form-readonly-control"
+                                                                                   placeholder="0" readonly/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <div class="form-group form-spin-group">
+                                                                        <label for="room-amount">Infant <small
+                                                                                    class="text-muted font10 line-1">(0-2)</small></label>
+                                                                        <div class="form-icon-left">
+                                                                                <span class="icon-font text-muted"><i
+                                                                                            class="bx bx-user"></i></span>
+                                                                            <input type="text"
+                                                                                   class="form-control touch-spin-03 form-readonly-control"
+                                                                                   placeholder="0" readonly/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="d-flex flex-row align-items-center mt-20">
+                                                    <div class="mr-auto">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                   id="flightSearchCheck-1"/>
+                                                            <label class="custom-control-label"
+                                                                   for="flightSearchCheck-1">(-/+ 3 days)</label>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#" class="btn btn-primary btn-wide">Search now</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade in" id="formSearchMain-03">
+
+                                <div class="tab-inner menu-horizontal-content">
+
+                                    <div class="form-search-main-01">
+
+                                        <form>
+
+                                            <div class="form-inner">
+
+                                                <div class="row gap-10 mb-15 align-items-center">
+
+                                                    <div class="col-6">
+                                                        <div class="form-group">
+                                                            <label>Pick-up Location</label>
+                                                            <div class="form-icon-left typeahead__container">
+                                                                    <span class="icon-font text-muted"><i
+                                                                                class="bx bx-map"></i></span>
+                                                                <input class="js-typeahead-country_v1 form-control"
+                                                                       name="country_v1[query]" type="search"
+                                                                       placeholder="Country or city"
+                                                                       autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-6">
+                                                        <div class="form-group">
+                                                            <label>Drop-off Location</label>
+                                                            <div class="form-icon-left typeahead__container">
+                                                                    <span class="icon-font text-muted"><i
+                                                                                class="bx bx-map"></i></span>
+                                                                <input class="js-typeahead-country_v1 form-control"
+                                                                       name="country_v1[query]" type="search"
+                                                                       placeholder="Country or city"
+                                                                       autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                   id="carCheck11">
+                                                            <label class="custom-control-label" for="carCheck11">Return
+                                                                car to the same location</label>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-6">
+
+                                                        <div class="form-group">
+                                                            <label>Pick-up Date</label>
+                                                            <div class="form-icon-left">
+                                                                    <span class="icon-font text-muted"><i
+                                                                                class="bx bx-calendar"></i></span>
+                                                                <input type="text"
+                                                                       class="form-control form-readonly-control air-datepicker"
+                                                                       placeholder="pick a date and time"
+                                                                       data-language="en" data-timepicker="true"
+                                                                       readonly>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-6">
+
+                                                        <div class="form-group">
+                                                            <label>Drop-off Date</label>
+                                                            <div class="form-icon-left">
+                                                                    <span class="icon-font text-muted"><i
+                                                                                class="bx bx-calendar"></i></span>
+                                                                <input type="text"
+                                                                       class="form-control form-readonly-control air-datepicker"
+                                                                       placeholder="pick a date and time"
+                                                                       data-language="en" data-timepicker="true"
+                                                                       readonly>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-12">
+
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                   id="carCheck21" checked>
+                                                            <label class="custom-control-label" for="carCheck21">Driver
+                                                                aged 25-70 from Thailand</label>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <a href="#" class="btn btn-primary btn-block">Search now</a>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade in" id="formSearchMain-04">
+
+                                <div class="tab-inner menu-horizontal-content">
+
+                                    <div class="form-search-main-01">
+
+                                        <form>
+
+                                            <div class="form-inner">
+
+                                                <div class="row gap-10 mb-15 align-items-sm-center">
+
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label>Destination</label>
+                                                            <div class="form-icon-left typeahead__container">
+                                                                    <span class="icon-font text-muted"><i
+                                                                                class="bx bx-map"></i></span>
+                                                                <input class="js-typeahead-country_v1 form-control"
+                                                                       name="country_v1[query]" type="search"
+                                                                       placeholder="Country or city"
+                                                                       autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12 col-sm-8 col-md-9">
+                                                        <div class="col-inner">
+                                                            <div class="row gap-10 mb-15">
+
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label>When</label>
+                                                                        <div class="form-icon-left">
+                                                                                <span class="icon-font text-muted"><i
+                                                                                            class="bx bx-calendar"></i></span>
+                                                                            <input type="text"
+                                                                                   class="form-control form-readonly-control air-datepicker"
+                                                                                   placeholder="Pick a month"
+                                                                                   data-min-view="months"
+                                                                                   data-view="months"
+                                                                                   data-date-format="MM yyyy"
+                                                                                   data-language="en"
+                                                                                   data-auto-close="true" readonly>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label>Type of tour</label>
+                                                                        <div class="form-icon-left">
+                                                                                <span class="icon-font text-muted"><span
+                                                                                            class="icon-inner"><i
+                                                                                                class="bx bx-calendar"></i></span></span>
+                                                                            <select data-placeholder="Please select"
+                                                                                    class="chosen-no-search form-control"
+                                                                                    tabindex="2">
+                                                                                <option></option>
+                                                                                <option>Adventure</option>
+                                                                                <option>City tour</option>
+                                                                                <option>Honeymoon</option>
+                                                                                <option>Cultural</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-4 col-sm-4 col-md-3">
+                                                        <div class="form-group form-spin-group">
+                                                            <label>Guests</label>
+                                                            <div class="form-icon-left">
+                                                                    <span class="icon-font text-muted"><i
+                                                                                class="bx bx-user"></i></span>
+                                                                <input type="text"
+                                                                       class="form-control touch-spin-03 form-readonly-control"
+                                                                       placeholder="0" readonly/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                   id="preferLocalGuide"/>
+                                                            <label class="custom-control-label"
+                                                                   for="preferLocalGuide">Prefer private local
+                                                                guide</label>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <a href="#" class="btn btn-primary btn-block">Search now</a>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade in" id="formSearchMain-05">
+
+                                <div class="tab-inner menu-horizontal-content">
+
+                                    <div class="form-search-main-01">
+
+                                        <form>
+
+                                            <div class="form-inner">
+
+                                                <div class="row gap-10 mb-15 align-items-end">
+
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label>Destination</label>
+                                                            <div class="form-icon-left typeahead__container">
+                                                                    <span class="icon-font text-muted"><i
+                                                                                class="bx bx-map"></i></span>
+                                                                <input class="js-typeahead-country_v1 form-control"
+                                                                       name="country_v1[query]" type="search"
+                                                                       placeholder="Country or city"
+                                                                       autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12 col-sm-12 col-md-12">
+                                                        <div class="col-inner">
+                                                            <div id="airDatepickerRange-guide"
+                                                                 class="row gap-10 mb-15">
+
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label>Check-in</label>
+                                                                        <div class="form-icon-left">
+                                                                                <span class="icon-font text-muted"><i
+                                                                                            class="bx bx-calendar"></i></span>
+                                                                            <input type="text" id="dateStart-guide"
+                                                                                   class="form-control form-readonly-control"
+                                                                                   placeholder="dd/mm/yyyy">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-6">
+                                                                    <div class="form-group">
+                                                                        <label>Check-out</label>
+                                                                        <div class="form-icon-left">
+                                                                                <span class="icon-font text-muted"><i
+                                                                                            class="bx bx-calendar"></i></span>
+                                                                            <input type="text" id="dateEnd-guide"
+                                                                                   class="form-control form-readonly-control"
+                                                                                   placeholder="dd/mm/yyyy">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-8">
+                                                        <div class="form-group">
+                                                            <label>Speak</label>
+                                                            <div class="form-icon-left">
+                                                                    <span class="icon-font text-muted"><span
+                                                                                class="icon-inner"><i
+                                                                                    class="bx bx-globe"></i></span></span>
+                                                                <select multiple data-placeholder="Please select"
+                                                                        class="chosen-no-search form-control"
+                                                                        tabindex="2">
+                                                                    <option></option>
+                                                                    <option>English</option>
+                                                                    <option>French</option>
+                                                                    <option>Italiano</option>
+                                                                    <option>Arabic</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <div class="form-group form-spin-group">
+                                                            <label>How many days?</label>
+                                                            <div class="form-icon-left">
+                                                                    <span class="icon-font text-muted"><i
+                                                                                class="bx bx-user"></i></span>
+                                                                <input type="text"
+                                                                       class="form-control touch-spin-03 form-readonly-control"
+                                                                       placeholder="0" readonly/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <a href="#" class="btn btn-primary btn-block">Search now</a>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- end Hero Banner -->
