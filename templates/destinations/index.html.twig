@@ -16,17 +16,22 @@
 
 {% block content %}
 
-    {% include('includes/content/hero-banner/index.html.twig') %}
     <!-- start Site Content -->
-
-    {% include('includes/content/most-popular-deals/index.html.twig') %}
-    {% include('includes/content/top-destinations/index.html.twig') %}
-    {% include('includes/content/why-booking-with-us/index.html.twig') %}
-    {% include('includes/content/what-people-say-about-us/index.html.twig') %}
-
+    {% include('destinations/breadcumbs.html.twig') %}
+    <div class="page-wrapper zero">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <div class="content-wrapper">
+                            {{ include('destinations/destinations.html.twig') }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <!-- end Site Content -->
-
-    {% include('includes/content/partners/index.html.twig') %}
 
 {% endblock %}
 
