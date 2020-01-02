@@ -4,13 +4,13 @@
         <div class="row align-items-center ">
             <div class="col-4">
                 <div class="header-logo">
-                    <a href="index.html"><img src="images/logo-white.png" alt="Logo" /></a>
+                    <a href="index.html"><img src="{{ asset('images/logo-white.png') }}" alt="Logo" /></a>
                 </div>
             </div>
             <div class="col-8">
                 <div class="mini-menu">
                     <ul>
-                        <li class="d-block d-md-none">
+                        {#<li class="d-block d-md-none">
                             <div class="dropdown dropdown-currency">
                                 <a href="#" class="btn btn-text-inherit btn-interactive" id="dropdownMobileSetting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-cogs"></i>
@@ -31,8 +31,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="d-none d-md-block">
+                        </li>#}
+                        {#<li class="d-none d-md-block">
                             <div class="dropdown dropdown-currency">
                                 <a href="#" class="btn btn-text-inherit btn-interactive" id="dropdownCurrency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     USD - dollar
@@ -46,8 +46,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="d-none d-md-block">
+                        </li>#}
+                        {#<li class="d-none d-md-block">
                             <div class="dropdown dropdown-language">
                                 <a href="#" class="btn btn-text-inherit btn-interactive" id="dropdownLangauge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="image"><img src="font-icons/img-flaticon-flags-4/png/260-united-kingdom.png" alt="image" /></span> English
@@ -63,8 +63,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li>
+                        </li>#}
+                        <li class="d-none d-md-block"><a class="btn btn-text-inherit btn-interactive" href="{{ path('app_login') }}">Sign In</a></li>
+                        <li class="d-none d-md-block"><a class="btn btn-text-inherit btn-interactive" href="{{ path('app_register') }}">Sign Up</a></li>
+                        {#<li>
                             <div class="dropdown dropdown-login dropdown-tab">
                                 <a href="#" class="btn btn-text-inherit btn-interactive" id="dropdownSignIn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Login / Register
@@ -223,10 +225,10 @@
                                 </div>
 
                             </div>
-                        </li>
-                        <li class="d-lg-none">
+                        </li>#}
+                        {#<li class="d-lg-none">
                             <button class="btn btn-toggle collapsed" data-toggle="collapse" data-target="#mobileMenuMain"></button>
-                        </li>
+                        </li>#}
                     </ul>
                 </div>
             </div>
